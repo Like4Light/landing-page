@@ -3,33 +3,43 @@ body {
     flex-direction: column;
     background-color: #000000;
     font-family: 'Courier New', Courier, monospace;
+    font-kerning: auto;
     padding-left: 150px;
     padding-right: 150px;
 }
 
+/* this is for layout  */
+/* div {
+    border: 1px solid #000000;
+} */
+
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
+
 /* Header section */
 .header {
     display: flex;
     justify-content: space-between;
     background-color: #1f2937;
-   
     align-items: center;
     flex-wrap: nowrap;
-    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+
 }
 
 .logo {
     font-size: 24px;
     color: #F9FaF8;
-
-
+    flex: 1;
+    text-align: left;
 }
 .links {
-    fl
+    flex: 1;
+    justify-content: flex-end;
+    text-align: right;
 }
 
 a.links {
@@ -38,56 +48,223 @@ a.links {
     font-size: 18px;
 
 }
+
 ul > li {
     display: inline-block;
-}
-
-ul {
     list-style: none;
-
 }
+
 /* Title w/ image section */
 .container-1 {
     display: flex;
-    padding: 40px;
+    padding: 60px;
     background-color: #1f2937;;
+
 }
 
 .container-1-1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
+.left-1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
 
+.title-1 {
+    display: flex;
+    color: #F9FaF8;
+    font-size: 48px;
+    font-weight: bolder;
+    flex: 0;
+}
 
+.description {
+    color:#e5e7eb;
+    font-size: 18px;
+    flex: 2;
 
+}
 
+.b-container {
+    flex: 1;
+
+}
+
+button.button-1 {
+    color: #Ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color:#3882f2;
+    border-radius: 10px;
+    border: 2px solid #3882f2;
+    width: 125px;
+    padding: 5px;
+    
+}
+
+.right-1 {
+    display: flex;
+    padding: 20px;
+    flex: 1;
+}
+
+.image {
+    display: flex;
+    width: 500px;
+    height: 200px;
+    background-color: grey;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
 /* Tile section */
 .container-2 {
     display: flex;
-    padding: 40px;
+    padding: 60px;
     background-color: #Ffffff;
+    flex-flow: column nowrap;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
 }
 
+.container-2-2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+    
+}
+
+.container-2-3 {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+
+}
+
+.title-2 {
+    text-align: center;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 700;}
+
+.tile {
+    display: flex;
+    flex: 0;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-square {
+    display: flex;
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    border: 3px solid #3882f2;
+}
+
+.tile-foot {
+    color:#1f2937;
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+}
 /* quote section */
 .container-3 {
     display: flex;
-    padding: 40px;
+    padding: 60px;
     background-color: #e5e7eb;
+    flex-flow: column nowrap;
 }
 
-/* Sign up section */
-.container-4{
-    display: flex;
-    padding: 40px;
-    background-color: #Ffffff;
+.quote {
+    text-align: justify;
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    color: #1f2937;
 }
+
+.author {
+    text-align: right;
+    font: 
+}
+
+/* call to action section */
+.container-4 {
+    display: flex;
+    padding: 60px;
+    background-color: #Ffffff;
+    justify-content: center;
+}
+
+.container-4-1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3882f2;
+    padding: 55px 50px 55px 80px;
+    border-radius: 10px;
+    border: none;
+    height: auto;
+    width: 850px;
+}
+
+.left-4 {
+    flex-grow: 2;
+    
+}
+
+.title-4 {
+    color: #Ffffff;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.description-4 {
+    color: #e5e7eb;
+    font-size: 18px;
+
+}
+.right-4 {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+button.button-4 {
+    color: #Ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color:#3882f2;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    width: 125px;
+    padding: 5px;
+}
+
 
 /* Footer section */
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px;
     background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 
