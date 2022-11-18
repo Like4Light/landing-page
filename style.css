@@ -66,13 +66,14 @@ ul > li {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    flex-flow: row-reverse wrap;
+    flex: 1 ;
 }
 
 .left-1 {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 2 2;
     gap: 10px;
 }
 
@@ -88,12 +89,10 @@ ul > li {
     color:#e5e7eb;
     font-size: 18px;
     flex: 2;
-
 }
 
 .b-container {
     flex: 1;
-
 }
 
 button.button-1 {
@@ -111,7 +110,9 @@ button.button-1 {
 .right-1 {
     display: flex;
     padding: 20px;
-    flex: 1;
+    flex: 2 2;
+    justify-content: center;
+    text-align: center;
 }
 
 .image {
@@ -120,11 +121,12 @@ button.button-1 {
     height: 200px;
     background-color: grey;
     flex: 1;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
-
 }
-/* Tile section */
+
+/* information section */
 .container-2 {
     display: flex;
     padding: 60px;
@@ -144,9 +146,10 @@ button.button-1 {
 }
 
 .container-2-3 {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-content: center;
+    flex-flow: row wrap;
     gap: 40px;
 
 }
@@ -198,7 +201,8 @@ button.button-1 {
 
 .author {
     text-align: right;
-    font: 
+    font-weight: 700;
+    font-size: 24px;
 }
 
 /* call to action section */
