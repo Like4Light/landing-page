@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     background-color: #000000;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
     font-kerning: auto;
     margin: auto:
   
@@ -119,7 +121,7 @@ button.button-1 {
     width: 500px;
     height: 200px;
     background-color: grey;
-    flex: 1 2 auto;
+    flex: 1 0 auto;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
